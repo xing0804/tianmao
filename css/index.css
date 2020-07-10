@@ -895,7 +895,63 @@ ul{
     color: #7A45E5;
 }
 
-
+.full-banner{
+    width: 982px;
+    height: 90px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-left: 0;
+    padding-right: 30px;
+    position: relative;
+}
+.fp-content-loading{
+    background: url(//img.alicdn.com/tps/TB1FEsePXXXXXcqXXXXXXXXXXXX-80-80.gif) 50% 50% no-repeat #f5f5f5!important;
+}
+.clearfix{
+    clear: both;
+    zoom: 1;
+}
+.clearfix::before{
+    display: table;
+    content: "";
+    overflow: hidden;
+}
+.clearfix::after{
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.color-mark{
+    display: block;
+    background-color: #333;
+    width: 5px;
+    height: 18px;
+    margin-top: 5px;
+    /* vertical-align: middle; */
+    float: left;
+}
+.floor-title{
+    margin-left: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 28px;
+}
+.floor-sub-name{
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+    line-height: 28px;
+    height: 18px;
+}
+@media (min-width:1260px){
+    .full-banner{
+        width: 1230px;
+        
+    }
+}
 
 
 /* 产品区结束 */
