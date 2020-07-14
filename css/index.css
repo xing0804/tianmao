@@ -11,6 +11,9 @@ em{
 a{
     text-decoration: none;
 }
+a:visited{
+    text-decoration: none;
+}
 a:hover{
     color: #ff0036 !important;
     text-decoration: none !important;
@@ -713,21 +716,23 @@ ul{
     text-align: center;
     vertical-align: middle;
 }
-.floor-current-tab{
+/* .floor-current-tab{
     color: #FFF;
     background: #00B262;
-}
+} */
 .tab-title{
     margin-top: 16px;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 57px;
+    color: #000000;
 }
-.tab-title2{
+/* .tab-title2{
     color: #FFF;
-}
+} */
 .floor-tab-content{
     height: 225px;
     width: 462px;
+    overflow: hidden;
 }
 .floor-tab-detail{
     height: 225px;

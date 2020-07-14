@@ -644,11 +644,17 @@
                         <div class="grid two-grid">
                             <div class="floor-tabs">
                                 <ul class="floor-tab-head">
-                                    <li class="floor-current-tab">
-                                        <p class="tab-title tab-title2">今日疯抢</p>
+                                    <li class="floor-current-tab" style="
+                                    background: #00B262;">
+                                        <a href="#" class="tab-title tab-title2" style="color: #FFF;">
+                                            今日疯抢
+                                        </a>
+
                                     </li>
-                                    <li class="">
-                                        <p class="tab-title">量贩装</p>
+                                    <li class="floor-current-tab">
+                                        <a href="#" class="tab-title">
+                                            量贩装
+                                        </a>
                                     </li>
                                 </ul>
                                 <div class="floor-tab-content">
@@ -671,7 +677,27 @@
                                         </a>
 
                                     </div>
+                                    <div class="floor-tab-detail" style="display: none;">
+                                        <a href="#" class="right-detail-a">
+                                            <div class="right-detail">
+                                                <div class="title-wrap">
+                                                    <img src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png"
+                                                        alt="" class="cla-icon">
+                                                    <span class="tab-item-title">
+                                                        爆款直降
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="tab-desp">粮油调味</span>
+                                                </div>
+                                            </div>
+                                            <img src="https://img.alicdn.com/tfs/TB1jNScP6TpK1RjSZKPXXa3UpXa-400-400.jpg"
+                                                alt="" class="item-img">
+                                        </a>
+
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                         <a href="#" class="one-grid-price grid">
@@ -854,7 +880,8 @@
             </div>
             <div style="margin-top: 10px;" class="full-banner fp-content-loading .clearfix">
                 <a href="#">
-                    <img src="https://aecpm.alicdn.com/simba/img/TB1_EfIJFXXXXXOXFXXSutbFXXX.jpg" alt="" width="1230" height="90">
+                    <img src="https://aecpm.alicdn.com/simba/img/TB1_EfIJFXXXXXOXFXXSutbFXXX.jpg" alt="" width="1230"
+                        height="90">
                 </a>
             </div>
             <div class="floor-content">
@@ -1064,8 +1091,8 @@
                         <a href="#" class="one-grid-price  grid2">
                             <div class="floor-item-content-wrap">
                                 <div class="floor-item-tag" style="visibility:hidden"></div>
-                                <img src="//gw.alicdn.com/bao/uploaded/i1/T1s1N0FHVcXXXXXXXX_!!0-item_pic.jpg"
-                                    alt="" class="floor-item-img">
+                                <img src="//gw.alicdn.com/bao/uploaded/i1/T1s1N0FHVcXXXXXXXX_!!0-item_pic.jpg" alt=""
+                                    class="floor-item-img">
                                 <div class="floor-item-title">Takstar/得胜 C3-2 C3-2 麦克风线 高屏蔽 卡农公对卡侬母话筒线</div>
                                 <div class="floor-price">￥78</div>
                             </div>
@@ -1496,6 +1523,66 @@
         </div>
     </div>
     <!-- 底部区结束 -->
+
+    <script>
+        var tabs = document.querySelectorAll(".tab-title");
+        var contents = document.querySelectorAll(".floor-tab-detail");
+        var lis = document.querySelectorAll(".floor-current-tab");
+        // tabs[0].onclick = function () {
+        //     contents[1].style.display = "none";
+        //     lis[1].style.background = "";
+        //     tabs[1].style.color = "#000";
+        //     lis[0].style.background = "#00B262";
+        //     tabs[0].style.color = "#fff";
+        //     contents[0].style.display = "block";
+        // }
+        // tabs[1].onclick = function () {
+        //     contents[0].style.display = "none";
+        //     lis[0].style.background = "";
+        //     tabs[0].style.color = "#000";
+        //     lis[1].style.background = "#00B262";
+        //     tabs[1].style.color = "#fff";
+        //     contents[1].style.display = "block";
+        // }
+
+        for (let i = 0; i < tabs.length; i++) {
+            tabs[i].onclick = function () {
+                for (var j = 0; j < contents.length; j++) {
+                    contents[j].style.display = "none";
+                    lis[j].style.background = "";
+                    tabs[j].style.color = "#000";
+                }
+                contents[i].style.display = "block";
+                lis[i].style.background = "#00b262";
+                tabs[i].style.color = "#fff";
+                var t = setInterval(tab(), 2000);
+            }
+        }
+
+        var num = 0;
+        function tab() {
+            if (num % 2 == 0) {
+                contents[1].style.display = "none";
+                lis[1].style.background = "";
+                tabs[1].style.color = "#000";
+                lis[0].style.background = "#00B262";
+                tabs[0].style.color = "#fff";
+                contents[0].style.display = "block";
+            } else {
+                contents[0].style.display = "none";
+                lis[0].style.background = "";
+                tabs[0].style.color = "#000";
+                lis[1].style.background = "#00B262";
+                tabs[1].style.color = "#fff";
+                contents[1].style.display = "block";
+            }
+            num++;
+        }
+
+        setInterval(tab, 2000);
+
+
+    </script>
 </body>
 
 </html>
