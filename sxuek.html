@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        .banner {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background: #cccccc;
+        }
+
+        .box {
+            height: 100%;
+            width: 100%;
+        }
+        .content{
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .swiper-pagination {
+            width: 100%;
+            text-align: center;
+            height: 15px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 20px;
+        }
+
+        .swiper-pagination-bullet {
+            margin: 0 5px;
+            display: inline-block;
+            width: 60px;
+            height: 5px;
+            background: rgba(255, 255, 255, 1);
+            cursor: pointer;
+            /* margin-right: 8px; */
+            border-radius: 0;
+            opacity: .5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="box">
+            <!-- <div class="content" style="background: red;"></div> -->
+            <img src="img/1.webp" alt="" class="content">
+        </div>
+        <div class="box">
+            <!-- <div class="content" style="background: rebeccapurple;"></div> -->
+            <img src="img/2.jpg" alt="" class="content">
+        </div>
+        <div class="box">
+            <img src="img/3.webp" alt="" class="content">
+            <!-- <div class="content" style="background: rosybrown;"></div> -->
+        </div>
+        <div class="box">
+            <img src="img/1.webp" alt="" class="content">
+            <!-- <div class="content" style="background: palegreen;"></div> -->
+        </div>
+        <div class="box">
+            <img src="img/2.jpg" alt="" class="content">
+            <!-- <div class="content" style="background: peru;"></div> -->
+        </div>
+        <div class="box">
+            <img src="img/3.webp" alt="" class="content">
+            <!-- <div class="content" style="background: greenyellow;"></div> -->
+        </div>
+        <div class="swiper-pagination">
+            <span class="swiper-pagination-bullet" style="background: #2691FD;"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+        </div>
+    </div>
+
+
+
+    <script>
+        var boxs=document.querySelectorAll(".box");
+        var btns=document.querySelectorAll(".swiper-pagination-bullet");
+
+        var num = 0;
+        setInterval(function () {
+            num++;
+            if (num > btns.length - 1) {
+                num = 0;
+            }
+            for (var j = 0; j < boxs.length; j++) {
+                boxs[j].style.display = "none";
+                btns[j].style.background = "#fff";
+            }
+            boxs[num].style.display = "block";
+            btns[num].style.background = "#2691FD";
+        },2000)
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                num=i;
+                for (var j = 0; j < boxs.length; j++) {
+                    boxs[j].style.display = "none";
+                    btns[j].style.background = "#fff";
+                }
+                boxs[i].style.display = "block";
+                this.style.background = "#2691FD";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
