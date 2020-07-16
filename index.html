@@ -6,9 +6,40 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>天猫页面练习</title>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
+    <!-- 最顶部开始 -->
+    <div class="max-header">
+        <div class="max-header-main">
+            <div class="newlogo">
+                <img src="img/tianmao2.png" alt="">
+            </div>
+            <div class="search-box2">
+                <form action="#">
+                    <input type="text2" class="s-left" placeholder="搜索 天猫 商品/品牌/店铺">
+                    <button class="s-btn2">搜索</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- 最顶部结束 -->
+    <!-- 边上导航区开始 -->
+    <ul class="floor-nav">
+        <li>导航</li>
+        <li>天猫<br>超市</li>
+        <li>天猫<br>国际</li>
+        <li>户外<br>出行</li>
+        <li>美丽<br>人生</li>
+        <li>居家<br>生活</li>
+        <li>潮电<br>酷玩</li>
+        <li>打造<br>爱巢</li>
+        <li>猜你<br>喜欢</li>
+        <li>><br>顶部</li>
+    </ul>
+    <!-- 边上导航区结束 -->
     <!-- 导航区开始 -->
     <div class="site-nav" role="navigation">
         <div class="sn-bd">
@@ -96,9 +127,7 @@
     </div>
     <div class="banner">
         <div class="container1">
-            <!-- <div class="logo">
-                <img src="img/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png" alt="" class="logo-img">
-            </div> -->
+
             <ul class="nav1">
                 <li>
                     <i class="shopicon"></i>
@@ -151,8 +180,86 @@
                     <i class="shopicon"></i>
                     <a href="#">图书音像</a></li>
             </ul>
+            <div class="nav1-box">
+                <div class="nav1-content">女装内衣</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">男装户外</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">女鞋男鞋</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">美妆</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">腕表眼镜</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">手机数码</div>
+            </div>
+
+            <div class="nav1-box">
+                <div class="nav1-content">母婴玩具</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">零食茶酒</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">生鲜水果</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">生活家电</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">家居建材</div>
+            </div>
+
+            <div class="nav1-box">
+                <div class="nav1-content">汽车配件</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">家纺家饰</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">医药保健</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">出具</div>
+            </div>
+            <div class="nav1-box">
+                <div class="nav1-content">图书音像</div>
+            </div>
 
 
+        </div>
+        <div class="wheel">
+            <a href="javascrip:;" class="banner-content">
+                <img src="img/4.webp" alt="">
+            </a>
+            <a href="javascrip:;" class="banner-content">
+                <img src="img/3.webp" alt="">
+            </a>
+            <a href="javascrip:;" class="banner-content">
+                <img src="img/5.jpg" alt="">
+            </a>
+            <a href="javascrip:;" class="banner-content">
+                <img src="img/2.jpg" alt="">
+            </a>
+            <a href="javascrip:;" class="banner-content">
+                <img src="img/6.webp" alt="">
+            </a>
+            <a href="javascrip:;" class="banner-content">
+                <img src="img/1.webp" alt="">
+            </a>
+        </div>
+        <div class="swiper-pagination">
+            <span class="swiper-bullet" style="background: #FFF;"></span>
+            <span class="swiper-bullet"></span>
+            <span class="swiper-bullet"></span>
+            <span class="swiper-bullet"></span>
+            <span class="swiper-bullet"></span>
+            <span class="swiper-bullet"></span>
         </div>
     </div>
     <!-- banner区结束 -->
@@ -646,13 +753,13 @@
                                 <ul class="floor-tab-head">
                                     <li class="floor-current-tab" style="
                                     background: #00B262;">
-                                        <a href="#" class="tab-title tab-title2" style="color: #FFF;">
+                                        <a href="javascript:;" class="tab-title tab-title2" style="color: #FFF;">
                                             今日疯抢
                                         </a>
 
                                     </li>
                                     <li class="floor-current-tab">
-                                        <a href="#" class="tab-title">
+                                        <a href="javascript:;" class="tab-title">
                                             量贩装
                                         </a>
                                     </li>
@@ -1528,22 +1635,6 @@
         var tabs = document.querySelectorAll(".tab-title");
         var contents = document.querySelectorAll(".floor-tab-detail");
         var lis = document.querySelectorAll(".floor-current-tab");
-        // tabs[0].onclick = function () {
-        //     contents[1].style.display = "none";
-        //     lis[1].style.background = "";
-        //     tabs[1].style.color = "#000";
-        //     lis[0].style.background = "#00B262";
-        //     tabs[0].style.color = "#fff";
-        //     contents[0].style.display = "block";
-        // }
-        // tabs[1].onclick = function () {
-        //     contents[0].style.display = "none";
-        //     lis[0].style.background = "";
-        //     tabs[0].style.color = "#000";
-        //     lis[1].style.background = "#00B262";
-        //     tabs[1].style.color = "#fff";
-        //     contents[1].style.display = "block";
-        // }
 
         for (let i = 0; i < tabs.length; i++) {
             tabs[i].onclick = function () {
@@ -1580,6 +1671,151 @@
         }
 
         setInterval(tab, 5000);
+
+
+
+        //轮播图实现
+
+        // var wheels = document.getElementsByClassName("banner-content");
+        // var bullets = document.getElementsByClassName("swiper-bullet");
+        var wheels = document.querySelectorAll(".banner-content");
+        var bullets = document.querySelectorAll(".swiper-bullet");
+        var banner = document.getElementsByClassName("wheel")[0];
+        console.log(wheels);
+
+        var num2 = 0;
+        function wheel() {
+            num2++;
+            if (num2 > 5) {
+                num2 = 0;
+            }
+            for (var i = 0; i < 6; i++) {
+                bullets[i].style.background = "#fff";
+                wheels[i].style.opacity = 0;
+                wheels[i].style.zIndex = 0;
+            }
+            bullets[num2].style.background = "#000";
+            animate(wheels[num2], {
+                opacity: 1,
+            }, 300, Tween.Linear, function () {
+                
+                wheels[num2].style.opacity = 1;
+                wheels[num2].style.zIndex = 1;
+            })
+        }
+        var t2 = setInterval(wheel, 3000);
+
+        //按钮轮播
+        for (let i = 0; i < bullets.length; i++) {
+            // console.log(bullets[i]);
+            bullets[i].onclick = function () {
+                bullets[i].style.cursor = "pointer";
+                num2 = i;
+                for (var j = 0; j < bullets.length; j++) {
+                    bullets[i].style.background = "#fff";
+                    wheels[i].style.opacity = 0;
+                    wheels[i].style.zIndex = 0;
+                }
+                bullets[num2].style.background = "#000";
+                wheels[num2].style.opacity = 1;
+                wheels[num2].style.zIndex = 1;
+                // animate(wheels[num2], {
+                //     opacity: 1,
+                // }, 300, Tween.Linear, function () {
+                //     bullets[num2].style.background = "#000";
+                //     wheels[num2].style.opacity = 1;
+                //     wheels[num2].style.zIndex = 1;
+                // })
+            }
+        }
+
+        // //鼠标移入移出
+        // banner.onmouseover = function () {
+        //     clearInterval(t2);
+        // }
+        // banner.onmouseout = function () {
+        //     t2 = setInterval(wheel, 3000);
+
+        // }
+
+
+        var navs = document.querySelectorAll(".nav1 li");
+        var nav1Boxs = document.querySelectorAll(".nav1-box");
+        var nav1Contents = document.querySelectorAll(".nav1-content");
+        var navas = document.querySelectorAll(".nav1 li a");
+        console.log(navas);
+
+
+        for (let i = 0; i < navs.length; i++) {
+            var flag1 = false;
+            var flag2 = false;
+            nav1Boxs[i].onmouseover = function () {
+                navs[i].style.background = "#fff";
+                navas[i].style.fontWeight = 700;
+                navas[i].style.color = "#E54077";
+                flag2 = true;
+            }
+            nav1Boxs[i].onmouseout = function () {
+                navs[i].style.background = "";
+                navas[i].style.fontWeight = "normal";
+                navas[i].style.color = "#fff";
+                flag2 = false;
+
+                nav1Boxs[i].style.display = "none";
+                nav1Contents[i].style.display = "none";
+
+            }
+            navs[i].onmouseover = function () {
+                nav1Boxs[i].style.display = "block";
+                nav1Contents[i].style.display = "block";
+                navas[i].style.fontWeight = 700;
+                navas[i].style.color = "#E54077";
+                flag1 = true;
+            }
+            navs[i].onmouseout = function () {
+                navs[i].style.background = "";
+                navas[i].style.fontWeight = "normal";
+                navas[i].style.color = "#fff";
+                flag1 = false;
+                nav1Boxs[i].style.display = "none";
+                nav1Contents[i].style.display = "none";
+
+            }
+
+        }
+
+        //最顶部
+        var maxHeader = document.querySelectorAll(".max-header")[0];
+        //边上导航
+        var floorNav = document.querySelector(".floor-nav");
+        console.log(floorNav);
+        floorNav.style.top = (document.documentElement.clientHeight - floorNav.offsetHeight) / 2 + "px";
+
+        window.onscroll = function () {
+            var st = document.documentElement.scrollTop;
+            if (st > 700) {
+                maxHeader.style.top = 0;
+            } else {
+                maxHeader.style.top = -50 + "px";
+
+            }
+            if (st > 600) {
+                floorNav.style.transform = "scale(1,1)";
+                floorNav.style.opacity = 1;
+            } else {
+                floorNav.style.transform = "scale(0,0)";
+                floorNav.style.opacity = 0;
+            }
+        }
+
+
+
+
+
+
+
+
+
 
 
     </script>
