@@ -1,36 +1,6 @@
 
 
 
-//轮播图实现
-
-// var wheels = document.getElementsByClassName("banner-content");
-// var bullets = document.getElementsByClassName("swiper-bullet");
-// // var wheels = document.querySelectorAll(".banner-content");
-// // var bullets = document.querySelectorAll(".swiper-bullet");
-// console.log(bullets);
-
-// var num = 0;
-// setInterval(function () {
-//     num++;
-//     if (num > 5) {
-//         num = 0;
-//     }
-//     for (var i = 0; i < 6; i++) {
-//         bullets[i].style.background = "#fff";
-//         wheels[i].style.opacity = 0;
-//         wheels[i].style.zIndex = 0;
-//     }
-//     animate(wheels[num], {
-//         opacity: 1,
-//     }, 300, Tween.Linear, function () {
-//         bullets[num].style.background = "#000";
-//         wheels[num].style.opacity = 1;
-//         wheels[num].style.zIndex = 1;
-//     })
-
-// }, 3000)
-
-
 
 
 
